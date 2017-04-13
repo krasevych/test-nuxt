@@ -13,3 +13,4 @@ dist
 # Intellij Idea
 .idea
 smart-landing.iml
+test-nuxt.iml

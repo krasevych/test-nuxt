@@ -1,3 +1,4 @@
+/*
 import Vuex from 'vuex'
 import { test } from './test/test'
 
@@ -14,3 +15,4 @@ const store = new Vuex.Store({
 })
 
 export default store
+*/

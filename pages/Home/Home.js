@@ -1,4 +1,4 @@
-import { GETTER_FULLNAME, CHANGE_NAME } from '../../store/test/test';
+import { FULLNAME, CHANGE_NAME } from '../../store/user';
 
 export default {
   data () {
@@ -8,13 +8,9 @@ export default {
     }
   },
   computed: {
-    test () {
-      console.log(333, this.$store)
-      return this.$store.state.test.a
-    },
     fullName () {
       console.log(555, this.$store)
-      return this.$store.getters[GETTER_FULLNAME]
+      return this.$store.getters[FULLNAME]
     }
   },
   methods: {
