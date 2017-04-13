@@ -12,7 +12,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    semi: ["error", "never"]
+    semi: 0
   },
   globals: {}
 }
