@@ -1,7 +1,6 @@
-export const CHANGE_NAME = 'test/changeName';
-export const FULLNAME = 'test/fullName';
+export const CHANGE_NAME = 'sl/user/changeName';
+export const FULLNAME = 'sl/user/fullName';
 
-export const namespaced = false
 export const state = {
   firstName: 'Roman',
   lastName: 'Krasevych'
