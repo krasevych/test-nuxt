@@ -1,44 +1,45 @@
-import { FULLNAME, CHANGE_NAME } from '../../store/user';
+import { FULLNAME, CHANGE_NAME } from 'src/store/modules/user';
 
 export default {
-  fetch ({store}) {
+  fetch({ store }) {
     console.log(333);
     return new Promise((resolve) => {
       setTimeout(() => {
         store.commit(CHANGE_NAME, 'VoVa');
         resolve({
-          a: 'Hello'
-        })
-      }, 1000)
-    })
+          a: 'Hello',
+        });
+      }, 1000);
+    });
   },
-  asyncData ({store}) {
-    console.log(111);
+  asyncData({ store }) {
+    console.log(111, store);
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({
-          m: 'Hello'
-        })
-      }, 1000)
-    })
+          m: 'Hello',
+        });
+      }, 1000);
+    });
   },
-  data () {
+  data() {
     return {
       t: 1,
-      username: 'test'
+      username: 'test',
     };
   },
-  created () {
-    console.log(555, this.$data)
-  },
   computed: {
-    fullName () {
+    fullName() {
       return this.$store.getters[FULLNAME];
-    }
+    },
   },
+  components: {},
   methods: {
-    changeName () {
+    changeName() {
       this.$store.commit(CHANGE_NAME, this.$data.username);
-    }
-  }
+    },
+  },
+  created() {
+    console.log(555, this.$store);
+  },
 };

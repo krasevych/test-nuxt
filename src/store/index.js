@@ -1,18 +1,8 @@
-/*
-import Vuex from 'vuex'
-import { test } from './test/test'
+import Vuex from 'vuex';
+import user from './modules/user';
 
-const store = new Vuex.Store({
-  state: {counter: 0},
-  mutations: {
-    increment (state) {
-      state.counter++
-    }
-  },
+export default new Vuex.Store({
   modules: {
-    test
-  }
-})
-
-export default store
-*/
+    user,
+  },
+});

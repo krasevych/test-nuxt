@@ -5,14 +5,17 @@ module.exports = {
     browser: true,
     node: true
   },
-  extends: 'standard',
+  extends: 'airbnb-base',
   // required to lint *.vue files
   plugins: [
     'html'
   ],
   // add your custom rules here
   rules: {
-    semi: 0
+    'no-param-reassign': 0,
+    'import/no-unresolved': 0,
+    'import/extensions': [2, { js: 'never' }],
+    'import/no-extraneous-dependencies': 0,
   },
   globals: {}
-}
+};

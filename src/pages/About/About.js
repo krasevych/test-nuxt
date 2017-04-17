@@ -1,23 +1,22 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import HelloWorld from '~components/HelloWorld';
+import { FULLNAME } from 'src/store/modules/user';
 
 @Component({
   components: {
-    'hello-world': HelloWorld
-  }
+    HelloWorld,
+  },
 })
 export default class About extends Vue {
   layout = 'default';
   t = 5;
 
-  get computedMsg () {
-    console.log(111, this.$store.getters.fullName);
-    return 'computed ' + this.t + this.$store.state.test.a;
+  get computedMsg() {
+    return this.$store.state.user.firstName;
   }
 
-  get fullName () {
-    return 'h'
-    // return this.$state.getters.test.fullName();
+  get fullName() {
+    return this.$store.getters[FULLNAME];
   }
 }
