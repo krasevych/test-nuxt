@@ -26,10 +26,10 @@ module.exports = {
      ** Run ESLINT on save
      */
     extend(config, { dev, isClient }) {
-      config.resolve.alias = Object.assign(config.resolve.alias,{
+      config.resolve.alias = Object.assign(config.resolve.alias, {
         src: `${process.cwd()}/src`,
+        'nuxt-class-component': 'src/plugins/nuxt-class-component',
       });
-      console.log(123, config)
 
       if (isClient && !dev) {
         config.module.rules.push({
