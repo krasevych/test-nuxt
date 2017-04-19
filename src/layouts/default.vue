@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import MainHeader from '~/components/MainHeader/MainHeader.vue';
+  import MainHeader from 'src/components/MainHeader/MainHeader.vue';
 
   export default {
     components: {
