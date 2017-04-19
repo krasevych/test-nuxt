@@ -40,12 +40,16 @@ module.exports = {
         });
       }
     },
-    vendor: ['vue-class-component'],
+    vendor: [
+      'vue-class-component',
+      'vue-property-decorator'
+    ],
     babel: {
       presets: ['vue-app', 'stage-0', 'es2015'],
       plugins: [
         'transform-decorators-legacy',
         'transform-class-properties',
+        'transform-vue-jsx',
       ],
     },
   },

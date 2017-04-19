@@ -3,7 +3,7 @@ import { FULLNAME, CHANGE_NAME } from 'src/store/modules/user';
 export default {
   fetch({ store }) {
     console.log(333);
-    return new Promise((resolve) => {
+    return new Promise(resolve => {
       setTimeout(() => {
         store.commit(CHANGE_NAME, 'VoVa');
         resolve({
@@ -14,7 +14,7 @@ export default {
   },
   asyncData({ store }) {
     console.log(111, store);
-    return new Promise((resolve) => {
+    return new Promise(resolve => {
       setTimeout(() => {
         resolve({
           m: 'Hello',

@@ -1,4 +1,4 @@
-import Component from 'vue-class-component';
+import { Component, Inject, Model, Prop, Watch } from 'vue-property-decorator';
 
 Component.registerHooks([
   'beforeRouteEnter',
@@ -11,4 +11,4 @@ Component.registerHooks([
   'scrollToTop',
 ]);
 
-export default Component;
+export { Component, Inject, Model, Prop, Watch };

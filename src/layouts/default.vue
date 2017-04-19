@@ -1,6 +1,6 @@
 <template lang='pug'>
     div
-        main-header
+        main-header(title='TEST')
         nuxt
 </template>
 

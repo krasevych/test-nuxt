@@ -3,13 +3,11 @@ module.exports = {
   parser: 'babel-eslint',
   env: {
     browser: true,
-    node: true
+    node: true,
   },
-  extends: 'airbnb-base',
+  extends: ['airbnb-base', 'prettier'],
   // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
+  plugins: ['html'],
   // add your custom rules here
   rules: {
     'no-param-reassign': 0,
@@ -17,5 +15,5 @@ module.exports = {
     'import/extensions': [2, { js: 'never' }],
     'import/no-extraneous-dependencies': 0,
   },
-  globals: {}
+  globals: {},
 };
