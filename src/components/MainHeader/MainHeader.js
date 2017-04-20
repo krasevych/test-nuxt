@@ -8,11 +8,10 @@ class MainHeader extends Vue {
     return <div id="foo">bar1</div>
   }
   render() {
-    console.log(111, this.jsx)
     return (<div id="foo">
       tttt: {this.title}
 
-      jsx: {this.jsx.children}
+      jsx: {this.jsx}
       </div>);
   }
 }
