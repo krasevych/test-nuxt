@@ -1,15 +1,18 @@
 <template lang='pug'>
     div
         main-header
+        bg-image
         nuxt
 </template>
 
 <script>
-  import MainHeader from 'src/components/Header/Header.vue';
+  import Header from 'src/components/Header/Header.vue';
+  import BgImage from 'src/components/BgImage/BgImage.vue';
 
   export default {
     components: {
-      'main-header': MainHeader,
+      'main-header': Header,
+      BgImage,
     },
   };
 </script>
