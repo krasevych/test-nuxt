@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Component from 'src/plugins/classComponent';
-import Logo from 'src/components/Logo/Logo.vue';
 
 @Component()
 class MainHeader extends Vue {
@@ -16,10 +15,7 @@ class MainHeader extends Vue {
       console.log('hello');
     };
 
-    return <div>
-      <Logo/>
-      <div {...{ on: { click: hi } }}> click me!!!</div>
-    </div>;
+    return <div {...{ on: { click: hi } }}> click me!!! </div>;
   }
 }
 

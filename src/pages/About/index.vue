@@ -6,4 +6,5 @@
         h2 {{computedMsg}}
         h3 {{fullName}}
         hello-world
+        logo
 </template>

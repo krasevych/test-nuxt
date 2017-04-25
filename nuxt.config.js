@@ -26,10 +26,7 @@ module.exports = {
      ** Run ESLINT on save
      */
     extend(config, { dev, isClient }) {
-      config.resolve.alias = Object.assign(config.resolve.alias, {
-        src: `${process.cwd()}/src`,
-        'nuxt-class-component': 'src/plugins/nuxt-class-component',
-      });
+      config.resolve.alias.src = `${process.cwd()}/src`;
 
       if (isClient && !dev) {
         config.module.rules.push({
@@ -42,7 +39,6 @@ module.exports = {
     },
     vendor: [
       'vue-class-component',
-      'vue-property-decorator'
     ],
     babel: {
       presets: ['vue-app', 'stage-0', 'es2015'],
