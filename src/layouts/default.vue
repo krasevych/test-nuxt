@@ -1,15 +1,15 @@
 <template lang='pug'>
     div
-        main-header(title='TEST')
+        main-header
         nuxt
 </template>
 
 <script>
-  import MainHeader from 'src/components/MainHeader/MainHeader.vue';
+  import MainHeader from 'src/components/Header/Header.vue';
 
   export default {
     components: {
-      MainHeader,
+      'main-header': MainHeader,
     },
   };
 </script>
