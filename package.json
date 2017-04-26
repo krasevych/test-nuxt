@@ -5,11 +5,10 @@
   "author": "Roman <krasevych@gmail.c>om>",
   "private": true,
   "dependencies": {
+    "lodash": "^4.17.4",
     "nuxt": "^0.10.6",
-    "pug": "^2.0.0-beta11",
     "vue": "^2.2.6",
     "vue-class-component": "^5.0.1",
-    "vue-property-decorator": "^4.0.0",
     "vuex": "^2.3.0"
   },
   "scripts": {
@@ -38,7 +37,10 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-promise": "^3.4.1",
     "eslint-plugin-standard": "^2.0.1",
+    "node-sass": "^4.5.2",
     "prettier": "^1.1.0",
+    "pug": "^2.0.0-beta11",
+    "sass-loader": "^6.0.3",
     "yarn": "^0.22.0"
   }
 }
