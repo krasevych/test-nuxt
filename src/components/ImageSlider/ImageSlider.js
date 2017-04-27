@@ -16,7 +16,6 @@ class ImageSlider extends Vue {
   currentNumber = 0;
 
   mounted() {
-    console.log(111, new KrTransition())
     this.start();
   }
 
@@ -28,7 +27,7 @@ class ImageSlider extends Vue {
 
     setTimeout(() => {
       this.start(nextIndex);
-    }, 5000);
+    }, 1000);
   }
 }
 
