@@ -1,35 +1,16 @@
 const { join } = require('path');
 
 module.exports = {
+  srcDir: 'src/',
+  loading: { color: '#3B8070' },
   css: [
     'src/css/transition.scss'
   ],
-  srcDir: 'src/',
-  /*
-   ** Headers of the page
-   */
-  head: {
-    title: 'starter',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' },
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    ],
-  },
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#3B8070' },
-  /*
-   ** Build configuration
-   */
+  plugins: [
+    'plugins/bootstrap'
+  ],
+
   build: {
-    /*
-     ** Run ESLINT on save
-     */
     extend(config, { dev, isClient }) {
       config.resolve.alias.src = join(process.cwd(), 'src');
 
@@ -44,6 +25,7 @@ module.exports = {
     },
     vendor: [
       'vue-class-component',
+      'bootstrap-vue'
     ],
     babel: {
       presets: ['vue-app', 'stage-0', 'es2015'],
@@ -52,5 +34,17 @@ module.exports = {
         'transform-class-properties',
       ],
     },
+  },
+
+  head: {
+    title: 'starter',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Nuxt.js project' },
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
   },
 };

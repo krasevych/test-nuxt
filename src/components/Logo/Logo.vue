@@ -1,7 +1,8 @@
 <script src="./Logo.js"></script>
 
 <template lang="pug">
-    h1 Logo
+    b-link.navbar-brand(to='#')
+        span BootstrapVue
 </template>
 
 <style module>

@@ -5,6 +5,7 @@
   "author": "Roman <krasevych@gmail.c>om>",
   "private": true,
   "dependencies": {
+    "bootstrap-vue": "^0.14.0",
     "lodash": "^4.17.4",
     "nuxt": "^0.10.6",
     "vue": "^2.2.6",
