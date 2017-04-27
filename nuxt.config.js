@@ -1,4 +1,9 @@
+const { join } = require('path');
+
 module.exports = {
+  css: [
+    'src/css/transition.scss'
+  ],
   srcDir: 'src/',
   /*
    ** Headers of the page
@@ -26,7 +31,7 @@ module.exports = {
      ** Run ESLINT on save
      */
     extend(config, { dev, isClient }) {
-      config.resolve.alias.src = `${process.cwd()}/src`;
+      config.resolve.alias.src = join(process.cwd(), 'src');
 
       if (isClient && !dev) {
         config.module.rules.push({
