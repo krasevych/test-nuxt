@@ -19,8 +19,18 @@ class Services extends Vue {
       content: 'AngularJS is an open-source web application framework, maintained by Google and community, that assists with creating single-page applications, one-page web applications that only require HTML, CSS, and JavaScript',
     },
     {
-      image: require('~assets/images/octagon/developer.jpg'),
-      title: 'web development',
+      image: require('~assets/images/octagon/responsive.jpg'),
+      title: 'responsive',
+      content: 'AngularJS is an open-source web application framework, maintained by Google and community, that assists with creating single-page applications, one-page web applications that only require HTML, CSS, and JavaScript',
+    },
+    {
+      image: require('~assets/images/octagon/web-design.png'),
+      title: 'web design',
+      content: 'AngularJS is an open-source web application framework, maintained by Google and community, that assists with creating single-page applications, one-page web applications that only require HTML, CSS, and JavaScript',
+    },
+    {
+      image: require('~assets/images/octagon/seo.jpg'),
+      title: 'seo',
       content: 'AngularJS is an open-source web application framework, maintained by Google and community, that assists with creating single-page applications, one-page web applications that only require HTML, CSS, and JavaScript',
     },
   ];

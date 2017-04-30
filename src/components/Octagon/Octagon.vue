@@ -1,7 +1,7 @@
 <script src="./Octagon.js"></script>
 
 <template lang="pug">
-  .octagon
+  .octagon(:class="'position-' + position")
     .image-container
       img(:src="image" )
       .line-l
@@ -21,22 +21,39 @@
 </template>
 
 <style scoped lang="scss">
+  @mixin position($i, $color) {
+    .position-#{$i} {
+
+      &:hover {
+        [class*='line'] {
+          background: $color;
+          box-shadow: 0 0 1px $color;
+        }
+      }
+
+      .title span {
+        &:before, &:after {
+          background: $color;
+        }
+      }
+    }
+
+  }
+
+  $list: #F35F4d, #42db81, #24a9ff, #FFA500;
+  @for $i from 1 through length($list) {
+    @include position($i, nth($list, $i))
+  }
+
   .octagon {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &:hover{
-      [class*='line'] {
-        background: #F35F4d;
-        box-shadow: 0 0 1px #F35F4d;
-      }
-    }
   }
 
   [class*='line'] {
     width: 65px;
-    height: 7.15px;
+    height: 7px;
     position: absolute;
 
     border-radius: 2px;
@@ -47,7 +64,12 @@
 
   .line-t {
     top: 0;
-    left: 44.5px;
+    left: 45px;
+  }
+
+  .line-b {
+    bottom: 0;
+    left: 45px;
   }
 
   .line-tr {
@@ -63,31 +85,26 @@
   }
 
   .line-r {
-    top: 74.75px;
-    right: -29.25px;
+    top: 74px;
+    right: -29px;
     transform: rotate(90deg)
   }
 
   .line-l {
-    top: 74.75px;
-    left: -29.25px;
+    top: 74px;
+    left: -29px;
     transform: rotate(90deg)
   }
 
-  .line-b {
-    bottom: 0;
-    left: 44.5px;
-  }
-
   .line-br {
-    bottom: 21.45px;
-    right: -7.15px;
+    bottom: 22px;
+    right: -8px;
     transform: rotate(-45deg)
   }
 
   .line-bl {
-    bottom: 21.45px;
-    left: -7px;
+    bottom: 22px;
+    left: -8px;
     transform: rotate(45deg)
   }
 
@@ -125,7 +142,6 @@
         width: 100%;
         height: 2px;
         margin-top: 1px;
-        background: #F35F4d;
       }
 
       &:after {

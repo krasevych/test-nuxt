@@ -6,9 +6,9 @@ import Component from 'src/plugins/classComponent';
     image: String,
     title: String,
     content: String,
-  }
+    position: Number,
+  },
 })
-class Octagon extends Vue {
-}
+class Octagon extends Vue {}
 
 export default Octagon;

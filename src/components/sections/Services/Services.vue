@@ -9,12 +9,13 @@
       )
 
       .row
-        kr-octagon(
-        v-for="octagon in octagons",
+        kr-octagon.col-md-3.col-sm-6(
+        v-for="(octagon, i) in octagons",
         :image="octagon.image",
         :title="octagon.title",
-        :content="octagon.content"
-        ).col-md-3.col-sm-6
+        :content="octagon.content",
+        :position="i+1"
+        )
 </template>
 
 <style scoped lang="scss">
