@@ -1,17 +1,16 @@
 <script src="./ImageSlider.js"></script>
 
 <template lang="pug">
-    div
-        transition(name="slide-fade")
-            img(
-            :key="currentNumber",
-            :src="images[currentNumber]",
-            :class="$style.fullSize"
-            )
+  .image-slider
+    transition(name="slide-fade")
+      img.full-size(
+      :key="currentNumber",
+      :src="images[currentNumber]"
+      )
 </template>
 
-<style module>
-    .fullSize {
-        width: 100%;
-    }
+<style scoped lang="scss">
+  .full-size {
+    width: 100%;
+  }
 </style>

@@ -4,10 +4,9 @@ import ButtonWhite from 'src/components/buttons/ButtonWhite/ButtonWhite.vue';
 
 @Component({
   components: {
-    ButtonWhite
-  }
+    'kr-button-white': ButtonWhite,
+  },
 })
-class Home extends Vue {
-}
+class Home extends Vue {}
 
 export default Home;

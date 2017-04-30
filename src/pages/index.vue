@@ -1,21 +1,26 @@
 <template lang="pug">
-    div(:class="$style.container")
-        home
+  .index-page
+    kr-home
+    kr-services
 </template>
 
 <script>
-  import Home from 'src/components/Home/Home.vue';
+  import Home from 'src/components/sections/Home/Home.vue';
+  import Services from 'src/components/sections/Services/Services.vue';
 
   export default {
     components: {
-      Home
+      'kr-home': Home,
+      'kr-services': Services
     },
   };
 </script>
 
-<style module lang="scss">
-    .container {
-        position: relative;
-        z-index: 1;
-    }
+<style scoped lang="scss">
+  .index-page {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
 </style>

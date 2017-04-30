@@ -1,34 +1,30 @@
 <script src="./Header.js"></script>
 
 <template lang="pug">
-  header(:class="$style.container")
-    b-navbar(
+  header.header
+    b-navbar.navbar-container(
     toggleable,
-    type="inverse",
-    :class="$style.navbarContainer"
+    type="inverse"
     )
-      logo
+      kr-logo
       b-nav-toggle(target="nav_collapse")
-      b-collapse#nav_collapse(
-      is-nav,
-      :class="$style.navCollapse"
-      )
-        navigation(:items="navItems")
+      b-collapse#nav_collapse.nav-collapse(is-nav)
+        kr-navigation(:items="navItems")
 </template>
 
-<style module lang="scss">
-  .container {
+<style scoped lang="scss">
+  .header {
     position: fixed;
     width: 100%;
     height: 50px;
     z-index: 2;
   }
 
-  .navbarContainer {
+  .navbar-container {
     box-shadow: 0 0 1px #ddd;
   }
 
-  .navCollapse {
+  .nav-collapse {
     justify-content: flex-end;
   }
 </style>

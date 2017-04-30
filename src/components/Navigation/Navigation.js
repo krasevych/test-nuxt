@@ -3,10 +3,9 @@ import Component from 'src/plugins/classComponent';
 
 @Component({
   props: {
-    items: Array
-  }
+    items: Array,
+  },
 })
-class Navigation extends Vue {
-}
+class Navigation extends Vue {}
 
 export default Navigation;

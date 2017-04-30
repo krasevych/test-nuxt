@@ -5,17 +5,12 @@ import Navigation from 'src/components/Navigation/Navigation.vue';
 
 @Component({
   components: {
-    Logo,
-    Navigation
-  }
+    'kr-logo': Logo,
+    'kr-navigation': Navigation,
+  },
 })
 class Header extends Vue {
-  navItems = [
-    'Home',
-    'Features',
-    'Portfolio',
-    'About Us'
-  ]
+  navItems = ['Home', 'Features', 'Portfolio', 'About Us'];
 }
 
 export default Header;
