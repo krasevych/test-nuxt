@@ -11,6 +11,7 @@
 
 <style scoped lang="scss">
   .full-size {
-    width: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
   }
 </style>

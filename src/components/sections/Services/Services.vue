@@ -11,6 +11,7 @@
       .row
         kr-octagon.col-md-3.col-sm-6(
         v-for="(octagon, i) in octagons",
+        :key="octagon.title",
         :image="octagon.image",
         :title="octagon.title",
         :content="octagon.content",

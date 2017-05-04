@@ -8,7 +8,7 @@
 
 <style scoped lang="scss">
   .header {
-    margin: 40px 0 70px;
+    margin-bottom: 70px;
     text-align: center;
 
     .title {

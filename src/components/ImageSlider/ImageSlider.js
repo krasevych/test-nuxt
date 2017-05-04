@@ -7,12 +7,13 @@ import Component from 'src/plugins/classComponent';
   },
 })
 class ImageSlider extends Vue {
+  time = 15000;
   currentNumber = 0;
 
   start(imgIndex = this.currentNumber) {
     this.currentNumber = imgIndex;
     const nextIndex = imgIndex < this.images.length - 1 ? imgIndex + 1 : 0;
-    setTimeout(() => this.start(nextIndex), 5000);
+    setTimeout(() => this.start(nextIndex), this.time);
   }
 
   mounted() {

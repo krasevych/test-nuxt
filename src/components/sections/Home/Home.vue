@@ -3,12 +3,16 @@
 <template lang="pug">
   section.home
     .container
-      h1.title Create awesome landing page for your Businesses
-      kr-button-white let's start
+      .header-content-inner
+        h1 Create awesome landing page for your Businesses
+        hr
+        p Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
+        kr-button-white let's start
 </template>
 
 <style scoped lang="scss">
   .home {
+    height: 100vh;
     min-height: 700px;
     position: relative;
 
@@ -17,21 +21,38 @@
   }
 
   .container {
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
 
-  .title {
-    z-index: 0;
-    line-height: 65px;
+  .header-content-inner {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin: 250px 0 30px;
 
-    color: #FFF;
-    font-size: 35px;
-    font-weight: 700;
-    text-transform: uppercase;
+    h1 {
+      color: #fff;
+      font-size: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    hr {
+      width: 50px;
+      margin: 25px 0;
+    }
+
+    p {
+      margin-bottom: 50px;
+      font-size: 18px;
+      max-width: 80%;
+      color: rgba(255,255,255, .8);
+    }
   }
 </style>
 
