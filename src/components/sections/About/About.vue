@@ -10,7 +10,7 @@
             :image="photo",
             rotate="-5"
             )
-          .col-md-5.text-card
+          .col-md-5.text-card.rounded
             h2 I am Roman Krasevych
             p I am a JavaScript Developer AngularJS is an open-source web application framework, maintained by Google and community, that assists with creating single-page applications, one-page web applications that only require HTML, CSS, and JavaScript
 
@@ -23,7 +23,6 @@
   .text-card {
     padding: 10px 20px;
     color: #333;
-    border-radius: 5px;
     background: rgba(255,255,255, .8);
   }
 </style>

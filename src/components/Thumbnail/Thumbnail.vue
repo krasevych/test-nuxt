@@ -1,7 +1,7 @@
 <script src="./Thumbnail.js"></script>
 
 <template lang="pug">
-  img.thumbnail(
+  img.thumbnail.rounded(
   :src="image",
   :style="{transform: `rotate(${rotate}deg)`}"
   )
@@ -12,7 +12,6 @@
     max-width: 85%;
     box-shadow: 3px 5px 8px rgba(0, 0, 0, .5);
     border: 12px solid #fff;
-    border-radius: 3px;
   }
 </style>
 
