@@ -4,13 +4,15 @@ module.exports = {
   srcDir: 'src/',
   loading: { color: '#3B8070' },
   css: [
-    'src/css/transition.scss'
+    'src/css/transition.scss',
+    'src/css/fonts.scss',
   ],
   plugins: [
     'plugins/bootstrap'
   ],
 
   build: {
+    extractCSS: true,
     extend(config, { dev, isClient }) {
       config.resolve.alias.src = join(process.cwd(), 'src');
 

@@ -4,6 +4,8 @@
     kr-services
     kr-about
     kr-skills
+    kr-social-links
+    kr-contact
 </template>
 
 <script>
@@ -11,13 +13,17 @@
   import Services from 'src/components/sections/Services/Services.vue';
   import About from 'src/components/sections/About/About.vue';
   import Skills from 'src/components/sections/Skills/Skills.vue';
+  import Contact from 'src/components/sections/Contact/Contact.vue';
+  import SocialLinks from 'src/components/sections/SocialLinks/SocialLinks.vue';
 
   export default {
     components: {
       'kr-home': Home,
       'kr-services': Services,
       'kr-about': About,
-      'kr-skills': Skills
+      'kr-skills': Skills,
+      'kr-social-links': SocialLinks,
+      'kr-contact': Contact,
     },
   };
 </script>

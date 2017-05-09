@@ -1,0 +1,49 @@
+@mixin renderFontFace($name, $url, $fileName: $name, $fWeight: normal) {
+  @font-face {
+    font-family: $name;
+    src: url('#{url}/#{fileName}.woff2') format('woff2'),
+    url('#{url}/#{fileName}.woff') format('woff');
+
+    font-weight: $fWeight;
+    font-style: normal;
+  }
+}
+
+@include renderFontFace('icomoon', '/fonts/icomoon', 'icomoon');
+@include font-face(icomoon, fonts/icomoon, 500, normal, woff2 woff);
+
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@font-face {
+  font-family: icomoon;
+  src: url('/fonts/icomoon/icomoon.woff2') format('woff2'),
+  url('/fonts/icomoon/icomoon.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}

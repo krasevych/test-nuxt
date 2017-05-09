@@ -35,9 +35,8 @@
   }
 
   hr {
-    border-color: #F05F40;
-    border-width: 3px;
-    max-width: 50px;
+    border: 2px solid #F05F40;
+    width: 50px;
   }
 
   section {
