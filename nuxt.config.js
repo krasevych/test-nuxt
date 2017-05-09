@@ -4,8 +4,8 @@ module.exports = {
   srcDir: 'src/',
   loading: { color: '#3B8070' },
   css: [
-    'src/css/transition.scss',
-    'src/css/fonts.scss',
+    {src: 'src/css/transition.scss',  lang: 'scss'},
+    {src: 'src/css/fonts.scss',  lang: 'scss'},
   ],
   plugins: [
     'plugins/bootstrap'

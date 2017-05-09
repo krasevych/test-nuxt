@@ -16,16 +16,16 @@ class Skills extends Vue {
   description = 'Major skills that help me create beautiful websites';
   skills = [
     {
-      title: 'JavaScript',
-      progress: 80,
-    },
-    {
-      title: 'HTML',
-      progress: 99,
-    },
-    {
-      title: 'CSS',
+      title: 'Front-end Development',
       progress: 95,
+    },
+    {
+      title: 'Back-end Development',
+      progress: 75,
+    },
+    {
+      title: 'Team Lead',
+      progress: 80,
     }
   ];
 }

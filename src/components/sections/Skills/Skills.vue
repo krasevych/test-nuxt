@@ -56,13 +56,14 @@
       top: 100%;
       left: 0;
       width: 50%;
-      transform: rotate(3deg);
-      border: 1px solid orange;
+      height: 1px;
+      background-color: #ccc;
+      transform: rotate(4deg);
     }
 
     &:before {
       left: 50%;
-      transform: rotate(-3deg);
+      transform: rotate(-4deg);
     }
   }
 </style>
