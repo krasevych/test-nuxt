@@ -8,7 +8,8 @@ module.exports = {
     'src/css/fonts.scss',
   ].map(s => ({src: s,  lang: 'scss'})),
   plugins: [
-    'plugins/bootstrap'
+    'plugins/bootstrap',
+    'plugins/vueForm',
   ],
 
   build: {

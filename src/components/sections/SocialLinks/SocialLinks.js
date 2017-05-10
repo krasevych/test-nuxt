@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Component from 'src/plugins/classComponent';
-import BgTransparent from 'src/components/BgTransparent/BgTransparent.vue';
+import BgTransparent from 'src/components/backgrounds/BgTransparent/BgTransparent.vue';
 import SocialLink from 'src/components/SocialLink/SocialLink.vue';
 
 @Component({

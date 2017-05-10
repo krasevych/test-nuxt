@@ -7,7 +7,7 @@
 
 <script>
   import Header from 'src/components/Header/Header.vue';
-  import BgImage from 'src/components/BgImage/BgImage.vue';
+  import BgImage from 'src/components/backgrounds/BgImage/BgImage.vue';
 
   export default {
     components: {

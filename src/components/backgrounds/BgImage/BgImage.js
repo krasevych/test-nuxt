@@ -1,7 +1,7 @@
 import Vue from 'vue';
+import range from 'lodash/range';
 import Component from 'src/plugins/classComponent';
 import ImageSlider from 'src/components/ImageSlider/ImageSlider.vue';
-import range from 'lodash/range';
 
 @Component({
   components: {

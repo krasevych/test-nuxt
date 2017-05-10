@@ -2204,7 +2204,7 @@ express@^4.14.1:
     utils-merge "1.0.0"
     vary "~1.1.0"
 
-extend@~3.0.0:
+extend@^3.0.0, extend@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.0.tgz#5a474353b9f3353ddd8176dfd37b91c83a46f1d4"
 
@@ -5281,6 +5281,12 @@ void-elements@^2.0.1:
 vue-class-component@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-5.0.1.tgz#feda06c3da266cee9064e224ba491e089923dce8"
+
+vue-form@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/vue-form/-/vue-form-4.0.2.tgz#e5d98b6d0bc310152e7f88b423e8fed5c0c0f0c2"
+  dependencies:
+    extend "^3.0.0"
 
 vue-hot-reload-api@^2.0.11:
   version "2.0.11"

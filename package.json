@@ -10,6 +10,7 @@
     "nuxt": "^0.10.6",
     "vue": "^2.2.6",
     "vue-class-component": "^5.0.1",
+    "vue-form": "^4.0.2",
     "vue-styled-components": "^1.1.1",
     "vuex": "^2.3.0"
   },
