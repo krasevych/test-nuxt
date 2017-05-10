@@ -21,6 +21,9 @@
 </template>
 
 <style scoped lang="scss">
+  @import '~src/css/_variables.scss';
+  @import '~bootstrap/scss/_variables.scss';
+
   @mixin position($i, $color) {
     .position-#{$i} {
 
@@ -40,7 +43,7 @@
 
   }
 
-  $list: #F35F4d, #42db81, #24a9ff, #FFA500;
+  $list: $red, $green, $blue, $orange;
   @for $i from 1 through length($list) {
     @include position($i, nth($list, $i))
   }

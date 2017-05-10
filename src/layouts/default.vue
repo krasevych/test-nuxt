@@ -35,8 +35,8 @@
   }
 
   hr {
-    border: 2px solid #F05F40;
     width: 50px;
+    height: 2px;
   }
 
   section {

@@ -6,7 +6,7 @@
 </template>
 
 <style scoped lang="scss">
-  $red: #F35F4d;
+  @import '~bootstrap/scss/_variables.scss';
 
   .button-white {
     padding: 15px 30px;
@@ -24,7 +24,7 @@
     transition: all 0.5s;
 
     &:hover {
-      color: $red;
+      color: $gray-light;
       background: rgba(244, 244, 244, 0.8);
       font-weight: 700;
     }

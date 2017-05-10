@@ -66,15 +66,15 @@
             )
               .error-message(slot="maxlength") Message must be less than 50 characters
 
-      .form-group
-        button.btn.btn-primary(type="submit") Send message
+      .form-group.row.justify-content-center.button-container
+        button.btn.btn-warning(type="submit") Send message
 
 </template>
 
 <style scoped lang="scss">
   h3 {
     text-align: left;
-    margin: 0 0 20px;
+    margin: 0 0 30px;
 
     color: #333333;
     font: {
@@ -114,5 +114,9 @@
     &:focus {
       background-color: #dedede;
     }
+  }
+
+  .button-container {
+    margin-top: 35px;
   }
 </style>

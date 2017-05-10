@@ -3,14 +3,8 @@ const { join } = require('path');
 module.exports = {
   srcDir: 'src/',
   loading: { color: '#3B8070' },
-  css: [
-    'src/css/transition.scss',
-    'src/css/fonts.scss',
-  ].map(s => ({src: s,  lang: 'scss'})),
-  plugins: [
-    'plugins/bootstrap',
-    'plugins/vueForm',
-  ],
+  css: [{ src: 'src/css/main.scss', lang: 'scss' }],
+  plugins: ['plugins/bootstrap', 'plugins/vueForm'],
 
   build: {
     extractCSS: true,
@@ -26,16 +20,10 @@ module.exports = {
         });
       }
     },
-    vendor: [
-      'vue-class-component',
-      'bootstrap-vue'
-    ],
+    vendor: ['vue-class-component', 'bootstrap-vue'],
     babel: {
       presets: ['vue-app', 'stage-0', 'es2015'],
-      plugins: [
-        'transform-decorators-legacy',
-        'transform-class-properties',
-      ],
+      plugins: ['transform-decorators-legacy', 'transform-class-properties'],
     },
   },
 
@@ -46,8 +34,6 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Nuxt.js project' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 };

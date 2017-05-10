@@ -6,6 +6,7 @@
     kr-skills
     kr-social-links
     kr-contact
+    kr-footer
 </template>
 
 <script>
@@ -15,6 +16,7 @@
   import Skills from 'src/components/sections/Skills/Skills.vue';
   import Contact from 'src/components/sections/Contact/Contact.vue';
   import SocialLinks from 'src/components/sections/SocialLinks/SocialLinks.vue';
+  import Footer from 'src/components/sections/Footer/Footer.vue';
 
   export default {
     components: {
@@ -24,6 +26,7 @@
       'kr-skills': Skills,
       'kr-social-links': SocialLinks,
       'kr-contact': Contact,
+      'kr-footer': Footer,
     },
   };
 </script>

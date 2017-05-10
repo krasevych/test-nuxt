@@ -5,7 +5,7 @@
     .container
       .header-content-inner
         h1 Create awesome landing page for your Businesses
-        hr
+        hr.bg-warning
         p Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
         kr-button-white let's start
 </template>
