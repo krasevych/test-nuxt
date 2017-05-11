@@ -18,7 +18,7 @@
           v-for="skill in skills",
           :key="skill.title",
           :title="skill.title",
-          :progress="skill.progress"
+          :progress="skill.progress",
           )
 
       .row.justify-content-center

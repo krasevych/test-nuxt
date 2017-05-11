@@ -67,7 +67,7 @@
               .error-message(slot="maxlength") Message must be less than 50 characters
 
       .form-group.row.justify-content-center.button-container
-        button.btn.btn-warning(type="submit") Send message
+        button.btn.btn-primary(type="submit") Send message
 
 </template>
 

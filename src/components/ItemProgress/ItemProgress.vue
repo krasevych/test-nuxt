@@ -8,8 +8,7 @@
 
     b-progress(
     v-model="progress",
-    variant="warning",
-    :precision="33",
+    variant="primary",
     )
 </template>
 
