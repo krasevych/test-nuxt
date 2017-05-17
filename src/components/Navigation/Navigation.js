@@ -12,10 +12,7 @@ import ScrollListener from 'src/components/ScrollListener/ScrollListener.vue';
 })
 class Navigation extends Vue {
   isScrolling = false;
-
-  scrollChanged(top) {
-    this.isScrolling = top > 0;
-  }
+  currentTab = this.$router.history.current.hash.replace('#', '');
 }
 
 export default Navigation;

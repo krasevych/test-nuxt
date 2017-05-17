@@ -5,13 +5,17 @@
   is-nav-bar
   :class="isScrolling && $style.isScrolling",
   )
-    kr-scroll-listener(@change="scrollChanged")
+    kr-scroll-listener(@change="isScrolling = !!$event")
     b-nav-item(
+    v-for="item in items",
+    @click="currentTab = item.url",
+    :active-class="$style.active",
+    :active="currentTab === item.url",
     :class="$style.navItem",
-    :key="index",
-    v-for="(item, index) in items"
+    :key="item.name",
+    :href="'#'+item.url",
     )
-      span {{item}}
+      span {{item.name}}
 </template>
 
 <style module lang="scss">
@@ -21,7 +25,7 @@
 
   .isScrolling .navItem {
     a {
-      padding: 15px !important;
+      padding: 20px 15px !important;
       transition: all $delay;
     }
   }
@@ -43,6 +47,7 @@
         background: $brand-primary;
         transition: height $delay;
       }
+
       &:hover, &.active {
         overflow: hidden;
         color: $brand-primary !important;

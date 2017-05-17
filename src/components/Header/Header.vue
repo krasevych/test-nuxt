@@ -1,8 +1,9 @@
 <script src="./Header.js"></script>
 
 <template lang="pug">
-  header.header
+  header.header(:class="{'is-scrolling': isScrolling}")
     .container
+      kr-scroll-listener(@change="isScrolling = !!$event")
       b-navbar.navbar-container(
       toggleable,
       type="inverse"
@@ -18,10 +19,16 @@
     position: fixed;
     width: 100%;
     z-index: 2;
+    transition: background-color .5s;
+  }
 
-    &.scroll-active {
-      background: rgba(0,0,0, .8);
-    }
+  .navbar-container {
+    padding: 0;
+  }
+
+  .is-scrolling {
+    background: rgba(0,0,0, .8);
+    transition: background-color .5s;
   }
 
   .nav-collapse {

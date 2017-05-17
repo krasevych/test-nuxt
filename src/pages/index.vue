@@ -1,10 +1,10 @@
 <template lang="pug">
   .index-page
-    kr-home
-    kr-services
-    kr-about
-    kr-skills
-    kr-social-links
+    kr-home#home
+    kr-services#services
+    kr-about#about
+    kr-skills#skills
+    kr-social-links#contact
     kr-contact
     kr-footer
 </template>
@@ -19,6 +19,17 @@
   import Footer from 'src/components/sections/Footer/Footer.vue';
 
   export default {
+    afterEach() {
+      console.log(888)
+    },
+    mounted() {
+      const { hash } = this.$router.history.current;
+      this.$router.push(hash);
+
+      this.$router.afterEach(function (to, from) {
+        console.log(888, to, from)
+      })
+    },
     components: {
       'kr-home': Home,
       'kr-services': Services,

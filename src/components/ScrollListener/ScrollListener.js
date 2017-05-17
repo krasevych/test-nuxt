@@ -7,14 +7,12 @@ class ScrollListener extends Vue {
     this.$emit('change', document.body.scrollTop);
   }
 
-  handlerScrollBind = this.handlerScroll.bind(this);
-
   mounted() {
-    window.addEventListener('scroll', this.handlerScrollBind);
+    window.addEventListener('scroll', this.handlerScroll);
   }
 
   destroyed() {
-    window.removeEventListener('scroll', this.handlerScrollBind);
+    window.removeEventListener('scroll', this.handlerScroll);
   }
 }
 
